@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zasoby Microsoft Cybersecurity Architect (SC-100)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f8fafc;
+        }
+        .link-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .category-title {
+            position: sticky;
+            top: 0;
+            background: #f8fafc;
+            z-index: 10;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-6xl mx-auto">
+        <header class="mb-12 text-center">
+            <h1 class="text-4xl font-extrabold text-slate-900 mb-4">Biblioteka Linków SC-100 (v2)</h1>
+            <p class="text-lg text-slate-600">Kompleksowe zestawienie zasobów dla architektów cyberbezpieczeństwa Microsoft.</p>
+        </header>
+
+        <!-- 1. Strategia, Benchmarki i Architektura -->
+        <section class="mb-12">
+            <h2 class="category-title text-2xl font-bold text-blue-900 border-b-2 border-blue-200 mb-6">Fundamenty, Strategia i Benchmarki</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/training/paths/sc-100-design-solutions-best-practices-priorities/" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Ścieżka szkoleniowa SC-100</a>
+                    <p class="text-slate-600 text-sm">Główny moduł Microsoft Learn dotyczący projektowania rozwiązań i najlepszych praktyk.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/security/adoption/mcra" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Microsoft Cybersecurity Reference Architecture (MCRA)</a>
+                    <p class="text-slate-600 text-sm">Kompleksowe diagramy opisujące integrację funkcji bezpieczeństwa w ekosystemie Microsoft.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/security/benchmark/azure/introduction" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Microsoft Cloud Security Benchmark (MCSB)</a>
+                    <p class="text-slate-600 text-sm">Wprowadzenie i przegląd standardów bezpieczeństwa dla usług chmurowych Azure.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://m365maps.com/" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">M365 Maps</a>
+                    <p class="text-slate-600 text-sm">Wizualizacja planów licencyjnych i dostępnych funkcjonalności Microsoft 365.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. CAF i Landing Zones -->
+        <section class="mb-12">
+            <h2 class="category-title text-2xl font-bold text-emerald-900 border-b-2 border-emerald-200 mb-6">Cloud Adoption Framework & Landing Zones</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Microsoft CAF Overview</a>
+                    <p class="text-slate-600 text-sm">Ramy wdrażania chmury: strategia, planowanie i faza gotowości.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/governance" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Governance w Landing Zones</a>
+                    <p class="text-slate-600 text-sm">Projektowanie ładu i standardów w środowiskach stref lądowania Azure.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/brownfield-considerations" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Brownfield Considerations</a>
+                    <p class="text-slate-600 text-sm">Wytyczne dotyczące dostosowywania istniejących środowisk Azure do standardów Landing Zones.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Adopcja AI w ramach CAF</a>
+                    <p class="text-slate-600 text-sm">Strategie i scenariusze bezpiecznego wdrażania usług AI.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Tożsamość i Zarządzanie Dostępem -->
+        <section class="mb-12">
+            <h2 class="category-title text-2xl font-bold text-orange-900 border-b-2 border-orange-200 mb-6">Tożsamość i Governance (Entra ID)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Entra ID: PIM Configuration</a>
+                    <p class="text-slate-600 text-sm">Zarządzanie dostępem "just-in-time" dla ról uprzywilejowanych.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/entra/id-governance/access-reviews-overview" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Przeglądy Dostępu (Access Reviews)</a>
+                    <p class="text-slate-600 text-sm">Mechanizmy cyklicznej weryfikacji uprawnień użytkowników i gości.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-overview" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Entitlement Management</a>
+                    <p class="text-slate-600 text-sm">Zarządzanie pakietami dostępu dla użytkowników wewnętrznych i partnerów zewnętrznych.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/what-is-cloud-sync" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Microsoft Entra Cloud Sync</a>
+                    <p class="text-slate-600 text-sm">Synchronizacja tożsamości z AD do Entra ID przy użyciu lekkich agentów.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Bezpieczeństwo Specjalistyczne i Chmury Suwerenne -->
+        <section class="mb-12">
+            <h2 class="category-title text-2xl font-bold text-purple-900 border-b-2 border-purple-200 mb-6">Infrastruktura i Chmury Specjalistyczne</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://www.microsoft.com/en-us/trust-center/cloud-services/sovereign-cloud" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Microsoft Sovereign Cloud</a>
+                    <p class="text-slate-600 text-sm">Rozwiązania dla administracji publicznej i sektora regulowanego zapewniające suwerenność danych.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Trusted Execution Environment (TEE)</a>
+                    <p class="text-slate-600 text-sm">Poufne obliczenia (Confidential Computing) chroniące dane podczas przetwarzania.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/secure-score-security-controls" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Secure Score & Security Controls</a>
+                    <p class="text-slate-600 text-sm">Zrozumienie punktacji bezpieczeństwa i mechanizmów kontrolnych w Defender for Cloud.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Wprowadzenie do Defender for Cloud</a>
+                    <p class="text-slate-600 text-sm">Cloud Workload Protection (CWPP) oraz Security Posture Management (CSPM).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Lighthouse i Multi-tenant -->
+        <section class="mb-12">
+            <h2 class="category-title text-2xl font-bold text-teal-900 border-b-2 border-teal-200 mb-6">Zarządzanie Multi-tenant (Lighthouse)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/azure/lighthouse/overview" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Azure Lighthouse Overview</a>
+                    <p class="text-slate-600 text-sm">Zarządzanie zasobami wielu klientów lub dzierżaw z poziomu jednego portalu.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/azure/lighthouse/concepts/architecture" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Architektura Azure Lighthouse</a>
+                    <p class="text-slate-600 text-sm">Szczegóły techniczne delegowania zasobów i uprawnień.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 link-card">
+                    <a href="https://learn.microsoft.com/en-us/microsoft-365/lighthouse/m365-lighthouse-tenants-page-overview" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">M365 Lighthouse</a>
+                    <p class="text-slate-600 text-sm">Narzędzie dla partnerów do monitorowania bezpieczeństwa wielu dzierżaw M365.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Operacje i Case Studies -->
+        <section class="mb-16">
+            <h2 class="category-title text-2xl font-bold text-rose-900 border-b-2 border-rose-200 mb-6">Materiały Praktyczne i Symulacje</h2>
+            <div class="grid gap-4">
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 link-card border-l-4 border-l-rose-500">
+                    <a href="https://github.com/MicrosoftLearning/SC-100-Microsoft-Cybersecurity-Architect/tree/master/Instructions/Labs" class="text-rose-700 font-bold hover:underline block mb-1" target="_blank">GitHub: Instrukcje do laboratoriów SC-100</a>
+                    <p class="text-slate-600 text-sm">Oficjalne repozytorium z zadaniami praktycznymi.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 link-card border-l-4 border-l-rose-500">
+                    <a href="https://microsoftlearning.github.io/click-throughs/docs/sc-100/sc100_casestudy_simulations/interactive_case_study_enhancing_user_access_control_and_threat_resilience/story.html" class="text-rose-700 font-bold hover:underline block mb-1" target="_blank">Symulacja: User Access & Threat Resilience</a>
+                    <p class="text-slate-600 text-sm">Interaktywne studium przypadku dotyczące kontroli dostępu i odporności.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 link-card border-l-4 border-l-rose-500">
+                    <a href="https://microsoftlearning.github.io/click-throughs/docs/sc-100/sc100_casestudy_simulations/interactive_case_study_securing_apps_and_data/story.html" class="text-rose-700 font-bold hover:underline block mb-1" target="_blank">Symulacja: Securing Apps and Data</a>
+                    <p class="text-slate-600 text-sm">Ćwiczenie skupione na ochronie warstwy aplikacji i bazy danych.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 link-card border-l-4 border-l-rose-500">
+                    <a href="https://learn.microsoft.com/en-us/azure/sentinel/mitre-coverage" class="text-blue-600 font-semibold hover:underline block mb-2" target="_blank">Sentinel & MITRE ATT&CK</a>
+                    <p class="text-slate-600 text-sm">Analiza pokrycia technik hakerskich w narzędziu SIEM.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-slate-500 text-sm py-8 border-t border-slate-200">
+            Zaktualizowano na podstawie najnowszego wykazu linków. Dokument przeznaczony do nauki do egzaminu SC-100.
+        </footer>
+    </div>
+</body>
+</html>
